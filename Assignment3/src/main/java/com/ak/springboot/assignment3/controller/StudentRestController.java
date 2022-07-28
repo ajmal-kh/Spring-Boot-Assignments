@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.ak.springboot.assignment3.entity.Student;
 import com.ak.springboot.assignment3.repository.StudentRepository;
-import com.ak.springboot.restcrudapi.entities.Course;
+
 
 @RestController
 public class StudentRestController {
@@ -37,7 +37,7 @@ public class StudentRestController {
 		return repository.save(student);
 	}
 	@RequestMapping(value="/students/{id}",method=RequestMethod.DELETE)
-	public void deleteStudent(@PathVariable("Id") int id) {
+	public void deleteStudent(@PathVariable("id") int id) {
 		repository.deleteById(id);
 	}
 	

@@ -1,0 +1,122 @@
+2022-07-28 12:11:03.213  INFO 24844 --- [main] c.a.s.a.Assignment3Application           : Starting Assignment3Application using Java 1.8.0_321 on Ajmal with PID 24844 (D:\sts-workplace\Assignment3\target\classes started by Ajmal in D:\sts-workplace\Assignment3)
+2022-07-28 12:11:03.216  INFO 24844 --- [main] c.a.s.a.Assignment3Application           : No active profile set, falling back to 1 default profile: "default"
+2022-07-28 12:11:03.696  INFO 24844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-28 12:11:03.737  INFO 24844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interfaces.
+2022-07-28 12:11:04.028  INFO 24844 --- [main] org.eclipse.jetty.util.log               : Logging initialized @2105ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-07-28 12:11:04.138  INFO 24844 --- [main] o.s.b.w.e.j.JettyServletWebServerFactory : Server initialized with port: 8080
+2022-07-28 12:11:04.141  INFO 24844 --- [main] org.eclipse.jetty.server.Server          : jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_321-b07
+2022-07-28 12:11:04.167  INFO 24844 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2022-07-28 12:11:04.167  INFO 24844 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 914 ms
+2022-07-28 12:11:04.237  INFO 24844 --- [main] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2022-07-28 12:11:04.237  INFO 24844 --- [main] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2022-07-28 12:11:04.237  INFO 24844 --- [main] org.eclipse.jetty.server.session         : node0 Scavenging every 600000ms
+2022-07-28 12:11:04.244  INFO 24844 --- [main] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@1c504e66{application,/studentapi,[file:///C:/Users/Ajmal/AppData/Local/Temp/jetty-docbase.8080.2687117207576044169/],AVAILABLE}
+2022-07-28 12:11:04.244  INFO 24844 --- [main] org.eclipse.jetty.server.Server          : Started @2322ms
+2022-07-28 12:11:04.331  INFO 24844 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-28 12:11:04.947  INFO 24844 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-28 12:11:04.991  INFO 24844 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-28 12:11:05.033  INFO 24844 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-07-28 12:11:05.184  INFO 24844 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-28 12:11:05.296  INFO 24844 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-28 12:11:05.838  INFO 24844 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-28 12:11:05.850  INFO 24844 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-28 12:11:06.249  WARN 24844 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-28 12:11:06.662  INFO 24844 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-28 12:11:06.662  INFO 24844 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-28 12:11:06.663  INFO 24844 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-28 12:11:06.683  INFO 24844 --- [main] o.e.jetty.server.AbstractConnector       : Started ServerConnector@4784013e{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2022-07-28 12:11:06.684  INFO 24844 --- [main] o.s.b.web.embedded.jetty.JettyWebServer  : Jetty started on port(s) 8080 (http/1.1) with context path '/studentapi'
+2022-07-28 12:11:06.693  INFO 24844 --- [main] c.a.s.a.Assignment3Application           : Started Assignment3Application in 3.801 seconds (JVM running for 4.771)
+2022-07-28 12:22:12.846  WARN 24844 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m37s721ms515µs900ns).
+2022-07-28 12:22:24.965  WARN 24844 --- [qtp928734079-50] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "actuators"]
+2022-07-28 12:22:36.082  WARN 24844 --- [qtp928734079-33] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "actuator"]
+2022-07-28 12:35:43.683  INFO 24844 --- [RMI TCP Connection(24)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-07-28 12:35:43.693  INFO 24844 --- [RMI TCP Connection(24)-127.0.0.1] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@4784013e{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2022-07-28 12:35:43.693  INFO 24844 --- [RMI TCP Connection(24)-127.0.0.1] org.eclipse.jetty.server.session         : node0 Stopped scavenging
+2022-07-28 12:35:43.694  INFO 24844 --- [RMI TCP Connection(24)-127.0.0.1] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-07-28 12:35:43.695  INFO 24844 --- [RMI TCP Connection(24)-127.0.0.1] o.e.jetty.server.handler.ContextHandler  : Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@1c504e66{application,/studentapi,[file:///C:/Users/Ajmal/AppData/Local/Temp/jetty-docbase.8080.2687117207576044169/],STOPPED}
+2022-07-28 12:35:43.699  INFO 24844 --- [RMI TCP Connection(24)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-28 12:35:43.700  INFO 24844 --- [RMI TCP Connection(24)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-28 12:35:43.705  INFO 24844 --- [RMI TCP Connection(24)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-28 13:23:41.052  INFO 24200 --- [main] c.a.s.a.Assignment3Application           : Starting Assignment3Application using Java 1.8.0_321 on Ajmal with PID 24200 (D:\sts-workplace\Assignment3\target\classes started by Ajmal in D:\sts-workplace\Assignment3)
+2022-07-28 13:23:41.055  INFO 24200 --- [main] c.a.s.a.Assignment3Application           : No active profile set, falling back to 1 default profile: "default"
+2022-07-28 13:23:41.776  INFO 24200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-28 13:23:41.809  INFO 24200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+2022-07-28 13:23:42.056  INFO 24200 --- [main] org.eclipse.jetty.util.log               : Logging initialized @2210ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-07-28 13:23:42.149  INFO 24200 --- [main] o.s.b.w.e.j.JettyServletWebServerFactory : Server initialized with port: 8080
+2022-07-28 13:23:42.151  INFO 24200 --- [main] org.eclipse.jetty.server.Server          : jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_321-b07
+2022-07-28 13:23:42.172  INFO 24200 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2022-07-28 13:23:42.172  INFO 24200 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1070 ms
+2022-07-28 13:23:42.332  INFO 24200 --- [main] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2022-07-28 13:23:42.332  INFO 24200 --- [main] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2022-07-28 13:23:42.333  INFO 24200 --- [main] org.eclipse.jetty.server.session         : node0 Scavenging every 600000ms
+2022-07-28 13:23:42.339  INFO 24200 --- [main] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@4beabeec{application,/studentapi,[file:///C:/Users/Ajmal/AppData/Local/Temp/jetty-docbase.8080.3518558447565755813/],AVAILABLE}
+2022-07-28 13:23:42.339  INFO 24200 --- [main] org.eclipse.jetty.server.Server          : Started @2494ms
+2022-07-28 13:23:42.392  INFO 24200 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-28 13:23:42.934  INFO 24200 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-28 13:23:42.972  INFO 24200 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-28 13:23:43.011  INFO 24200 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-07-28 13:23:43.166  INFO 24200 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-28 13:23:43.294  INFO 24200 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-28 13:23:43.698  INFO 24200 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-28 13:23:43.707  INFO 24200 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-28 13:23:43.923  WARN 24200 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-28 13:23:44.368  INFO 24200 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-28 13:23:44.397  INFO 24200 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-28 13:23:44.398  INFO 24200 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-28 13:23:44.399  INFO 24200 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-28 13:23:44.415  INFO 24200 --- [main] o.e.jetty.server.AbstractConnector       : Started ServerConnector@5445f5ba{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2022-07-28 13:23:44.416  INFO 24200 --- [main] o.s.b.web.embedded.jetty.JettyWebServer  : Jetty started on port(s) 8080 (http/1.1) with context path '/studentapi'
+2022-07-28 13:23:44.425  INFO 24200 --- [main] c.a.s.a.Assignment3Application           : Started Assignment3Application in 3.726 seconds (JVM running for 4.58)
+2022-07-28 13:25:46.878  INFO 24200 --- [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-07-28 13:25:46.886  INFO 24200 --- [RMI TCP Connection(7)-127.0.0.1] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@5445f5ba{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2022-07-28 13:25:46.886  INFO 24200 --- [RMI TCP Connection(7)-127.0.0.1] org.eclipse.jetty.server.session         : node0 Stopped scavenging
+2022-07-28 13:25:46.887  INFO 24200 --- [RMI TCP Connection(7)-127.0.0.1] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-07-28 13:25:46.888  INFO 24200 --- [RMI TCP Connection(7)-127.0.0.1] o.e.jetty.server.handler.ContextHandler  : Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@4beabeec{application,/studentapi,[file:///C:/Users/Ajmal/AppData/Local/Temp/jetty-docbase.8080.3518558447565755813/],STOPPED}
+2022-07-28 13:25:46.892  INFO 24200 --- [RMI TCP Connection(7)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-28 13:25:46.895  INFO 24200 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-28 13:25:46.900  INFO 24200 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-28 13:30:45.606 ERROR 6412 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.ak.springboot.assignment3.Assignment3Application]; nested exception is java.lang.IllegalStateException: Error processing condition on org.springframework.boot.actuate.autoconfigure.audit.AuditEventsEndpointAutoConfiguration
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:610) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.annotation.ConfigurationClassParser.access$800(ConfigurationClassParser.java:111) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.lambda$processGroupImports$1(ConfigurationClassParser.java:812) ~[spring-context-5.3.22.jar:5.3.22]
+	at java.util.ArrayList.forEach(ArrayList.java:1259) ~[na:1.8.0_321]
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.processGroupImports(ConfigurationClassParser.java:809) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorHandler.process(ConfigurationClassParser.java:780) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:193) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.2.jar:2.7.2]
+	at com.ak.springboot.assignment3.Assignment3Application.main(Assignment3Application.java:10) [classes/:na]
+Caused by: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.actuate.autoconfigure.audit.AuditEventsEndpointAutoConfiguration
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60) ~[spring-boot-autoconfigure-2.7.2.jar:2.7.2]
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:226) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:600) ~[spring-context-5.3.22.jar:5.3.22]
+	... 19 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Value must only contain valid chars
+	at org.springframework.util.Assert.isTrue(Assert.java:121) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.boot.actuate.endpoint.EndpointId.<init>(EndpointId.java:58) ~[spring-boot-actuator-2.7.2.jar:2.7.2]
+	at org.springframework.boot.actuate.endpoint.EndpointId.fromPropertyValue(EndpointId.java:146) ~[spring-boot-actuator-2.7.2.jar:2.7.2]
+	at org.springframework.boot.actuate.autoconfigure.endpoint.expose.IncludeExcludeEndpointFilter$EndpointPatterns.<init>(IncludeExcludeEndpointFilter.java:228) ~[spring-boot-actuator-autoconfigure-2.7.2.jar:2.7.2]
+	at org.springframework.boot.actuate.autoconfigure.endpoint.expose.IncludeExcludeEndpointFilter.<init>(IncludeExcludeEndpointFilter.java:123) ~[spring-boot-actuator-autoconfigure-2.7.2.jar:2.7.2]
+	at org.springframework.boot.actuate.autoconfigure.endpoint.expose.IncludeExcludeEndpointFilter.<init>(IncludeExcludeEndpointFilter.java:81) ~[spring-boot-actuator-autoconfigure-2.7.2.jar:2.7.2]
+	at org.springframework.boot.actuate.autoconfigure.endpoint.condition.OnAvailableEndpointCondition$ExposureFilter.<init>(OnAvailableEndpointCondition.java:183) ~[spring-boot-actuator-autoconfigure-2.7.2.jar:2.7.2]
+	at org.springframework.boot.actuate.autoconfigure.endpoint.condition.OnAvailableEndpointCondition$ExposureFilter.<init>(OnAvailableEndpointCondition.java:177) ~[spring-boot-actuator-autoconfigure-2.7.2.jar:2.7.2]
+	at org.springframework.boot.actuate.autoconfigure.endpoint.condition.OnAvailableEndpointCondition.getExposureFilters(OnAvailableEndpointCondition.java:171) ~[spring-boot-actuator-autoconfigure-2.7.2.jar:2.7.2]
+	at org.springframework.boot.actuate.autoconfigure.endpoint.condition.OnAvailableEndpointCondition.getMatchOutcome(OnAvailableEndpointCondition.java:117) ~[spring-boot-actuator-autoconfigure-2.7.2.jar:2.7.2]
+	at org.springframework.boot.actuate.autoconfigure.endpoint.condition.OnAvailableEndpointCondition.getMatchOutcome(OnAvailableEndpointCondition.java:74) ~[spring-boot-actuator-autoconfigure-2.7.2.jar:2.7.2]
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47) ~[spring-boot-autoconfigure-2.7.2.jar:2.7.2]
+	... 22 common frames omitted
+

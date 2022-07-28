@@ -1,6 +1,7 @@
 package com.ak.springboot.assignment3;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Value;
@@ -18,7 +19,8 @@ class Assignment3ApplicationTests {
 	@Test
 	void testGetStudent() {
 		RestTemplate restTemplate = new RestTemplate();
-		restTemplate.getForObject(baseURL+1,Student.class);
+		Student retrievedStudent = restTemplate.getForObject(baseURL+1,Student.class);
+		assertNotNull(retrievedStudent);
 	}
 	@Test
 	void testCreateStudent() {
@@ -26,22 +28,22 @@ class Assignment3ApplicationTests {
 		Student newStudent = new Student();
 		newStudent.setName("ajmal");
 		newStudent.setScore(45);
-		Student createdStudent = restTemplate.postForObject("baseURL",newStudent,Student.class);
+		restTemplate.postForObject(baseURL,newStudent,Student.class);
 	}
 	
 	@Test
 	void testUpdateStudent() {
 		RestTemplate restTemplate = new RestTemplate();
 		Student prevStudent = restTemplate.getForObject(baseURL+"2", Student.class);
-		prevStudent.setName("C");
-		restTemplate.put("baseURL", prevStudent, Student.class);
-		assertEquals("C",prevStudent.getName());
+		prevStudent.setName("babbu");
+		restTemplate.put(baseURL, prevStudent, Student.class);
+//		assertEquals("babbu",prevStudent.getName());
 	}
 	
 	@Test
 	void testDeleteStudent() {
 		RestTemplate restTemplate = new RestTemplate();
-		restTemplate.delete(baseURL+"2");	
+		restTemplate.delete(baseURL+"3");	
 	}
 
 }
